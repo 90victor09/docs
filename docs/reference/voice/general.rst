@@ -52,3 +52,46 @@ Response
 
     {
     }
+    
+Events
+------------------
+
+VOICE_STATE_UPDATE
+~~~~~~~
+
+Someone (including you) has joined the voice channel.
+
+.. code-block:: json
+
+    {
+        "s": 1,
+        "op": 0,
+        "d": {
+            "user_id": "11122233344455566",
+            "suppress": false,
+            "session_id": "aaaabbbbccccddddeeeeffffgggghhhh",
+            "self_mute": false,
+            "self_deaf": false,
+            "mute": false,
+            "guild_id": "11122233344455566",
+            "deaf": false,
+            "channel_id": "11122233344455566"
+        }
+    }
+
+VOICE_SERVER_UPDATE
+~~~~~~~
+
+You have joined the voice channel.
+
+.. code-block:: json
+
+    {
+        "s": 1,
+        "op": 0,
+        "d": {
+            "token":"aaabbbcccdddeeef",
+            "guild_id":"11122233344455566",
+            "endpoint":"amsterdam13.discord.gg:80"
+        }
+    }
